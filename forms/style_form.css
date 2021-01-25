@@ -1,0 +1,30 @@
+* {
+    font-family: "Gilroy", sans-serif;
+}
+
+body {
+    background: #E5E5E5;
+}
+form {
+    background: #fff;
+    max-width: 625px;
+    margin: auto;
+
+}
+
+.form_padding {
+    padding: 30px 40px;
+}
+
+.form_title {
+    font-size: 28px;
+    color: #B3B3B3;
+    font-weight: 600;
+}
+
+hr {
+    border: none;
+    background-color: #EEBF3A;
+    color: #EEBF3A;
+    height: 1px;
+}
