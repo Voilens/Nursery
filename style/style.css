@@ -452,6 +452,19 @@ h1 {
     color: #AD7F00;
     text-align: center;
     margin: 0 auto;
+    
+}
+
+i {
+    border: solid #AD7F00;
+    border-width: 0px 2px 2px 0px;
+    display: inline-block;
+    padding: 5px;
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left: 10px;
 }
 .section-help__socs{
     display: inline-flex;
@@ -488,4 +501,10 @@ h1 {
 
 .nav-img__link-inst:active svg{
     fill: #F8ECCB;    
+}
+
+/* секция финансовая поддержка */
+
+.finance{
+    background: #fff;
 }
