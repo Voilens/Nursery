@@ -9,8 +9,11 @@ html{
     font-family: "Gilroy", "Arial", serif;
     margin: 0;
     padding: 0; 
-}body{
-        background-color: #F6F6F6;
+}
+body{
+    background-color: #F6F6F6;
+        
+        
 }
 header {  
     z-index: -1;
@@ -39,9 +42,35 @@ header {
     z-index: 1;
 }
 .container {
-    max-width: 1146px;
+    max-width: 1176px;
+    padding: 0px 15px;
     margin: 0 auto;
     position: relative;  
+}
+@media (min-width:1367px){
+    .container{
+        max-width: 1176px;
+    }
+}
+@media (min-width:1270px) and (max-width:1366px){
+    .container{
+        max-width: 1176px;
+    }
+}
+@media (min-width:768px) and (max-width:1023px){
+    .container{
+        max-width: 1176px;
+    }
+}
+@media (min-width:640px) and (max-width:767px){
+    .container{
+        max-width: 412px;
+    }
+}
+@media (max-width: 639px){
+    .container{
+        max-width: none;
+    }
 }
 nav {
     display: flex;
