@@ -1,2 +1,2 @@
-modulesapp/node_modules/
-.json
+**/modulesapp/node_modules/**
+*.json
