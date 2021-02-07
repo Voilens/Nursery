@@ -320,34 +320,35 @@ h1 {
 .section-help {
     background-color: #F6F6F6;
 }
-.section-help__icons{
+.section-help__icons {
     display: flex;
     justify-content: space-between;
-
 }
-.section-help__icons-box p{
+.section-help__icons-box p {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
     color: #474747;
     margin-top: 24px;
 }
-.section-help__icons div{
+.section-help__icons div {
     flex-grow: 1;
     max-width: 166px;
     text-align: center;
 }
-
 .section-help__title {
+    display: block;
+    text-align: center;
+    align-items: center;
+    min-height: 63px;
     font-weight: 300;
     font-size: 28px;
     padding: 80px 0 47px 0 ;
     color: #242424; 
     line-height: 24px;
-    text-align: center;
+    
 }
-
-.section-help__circle{
+.section-help__circle {
     display: flex;
     width: 150px;
     height: 150px;
@@ -359,28 +360,29 @@ h1 {
     justify-content: space-around;
     margin: 0 auto;
 }
-
-.section-help__circle:hover{
+.section-help__circle:hover {
     background: #fff;
     
 }
-.section-help__circle:active{
+.section-help__circle:active {
    background:#F8ECCB;
    
 }
-.section-help__icon-link svg{
+.section-help__icon-link svg {
     margin: auto 0;
 }
 
 .section-help__flex{
     display: flex;
-    margin: 68px 0;   
+    padding-top: 79px;
+    padding-bottom: 68px;
+
 }
-.section-help__flex-item{
+.section-help__flex-item {
     width: 100%;
     
 }
-.section-help__flex-item_img{
+.section-help__flex-item_img {
     padding-left: 34px;
     padding-right: 32px;
 }
@@ -393,40 +395,46 @@ h1 {
     position: relative;
     top: 75px;
 }
-
 .section-help__content{
     display: flex;
     padding-left: 174px; 
 }
-.section-help__content-text{
+.section-help__content-text {
     padding-right: 97px;
     margin-bottom: 72px;
+    max-width: 486px;
+    
 }
 .title-w600{
+    display: flex;
     font-weight: 600;
     padding-bottom: 20px;
     padding-top: 11px;
-   
+    text-align: left;
+    align-items: center;
 }
-.section-help__content-text>p{
+.section-help__content-text>p {
     font-size: 16px;
-    line-height: 140%;
+    line-height: 22px;
     color: #242424;  
 }
 .title-padding{
     padding: 0;
     margin-bottom: 8px;
 }
+
+
+
+
 /* Карточки с животными */
-.section-help__card{
+.section-help__card {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
    
 }
-
-.section-help__card-box{
+.section-help__card-box {
     background: #fff;
     border: 1px solid #D6D6D6;
     border-radius: 5px;
@@ -437,7 +445,6 @@ h1 {
     margin-bottom: 20px;
     margin-top: 24px;
 }
-
 
 
 .section-help__card-box_1 h4{
@@ -578,11 +585,22 @@ i {
     fill: #F8ECCB;    
 }
 
+
+
+
+
+
+
+
 /* секция финансовая поддержка */
 
-.finance{
+.finance {
     background: #fff;
 }
+
+
+
+
 
 
 
@@ -695,7 +713,6 @@ i {
     }
     .section-heart__img-cat{
         width: 169px;
-        /* height: 158px; */
         left: 194px;
         top: 247px;
         border: 6px solid #FFC41E;
@@ -706,7 +723,97 @@ i {
         height: calc(100% + 40px);
         top: -21px;
     }
+    /* Секция 2 */
+
+    .section-help__title {  
+        
+        font-size: 24px;
+        padding: 64px 0 32px 0 ;
+        line-height: 24px;
+        min-height: 68px;  
+        
+    }
+    .title-w600 {
+        padding: 0px 0 4px 0 ;
+    }
+    
+    .section-help .container {
+        justify-content: space-between;
+    }
+    .section-help__circle {
+        display: flex;
+        width: 110px;
+        height: 110px;
+        border-radius: 75px;
+        border: 2px solid #FFC41E;
+        -moz-border-radius: 75px;
+        -webkit-border-radius: 75px;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .section-help__circle svg {
+        width: 62px;
+        height: 60px;
+    }
+    .section-help__icons-box p {
+        font-size: 14px;
+        line-height: 20px;
+         max-width: 140px;
+    }
+    .section-help__flex-item_img svg {
+        width: 101px;
+        height: 98px;
+    }
+    .section-help__flex {
+        padding-top: 75px;
+        padding-bottom: 61px;
+    }
+    .section-help__flex-item:after {
+        top: 50px;
+    }
+    .section-help__content {
+        justify-content:flex-end;
+        padding:0;
+    }
+    .section-help__content-text {
+        max-width: 344px;
+        padding-right: 69px;
+        margin-bottom: 48px;
+    }
+    .title-padding {
+        min-height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .section-help__card {
+        justify-content: space-between;
+    }
+    .section-help__socs {
+        padding: 48px 69px 79px 69px;
+    }
+    .section-help__socs p{
+        flex-basis: 529px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 0;
+        margin-right: 7px;
+    }
+    .socs-img__link-vk {
+        padding-right: 32px;
+    }
+
+
+    /* finance */
+    .flex-block {
+        margin-top: 0;
+    }
+
 }
+
+
+
+
 
 
 
@@ -933,4 +1040,76 @@ i {
         padding-bottom: 16px;
     }
     
+
+    /* секция 2 */
+    .section-help__title{
+        
+
+    }
+    .title-w600 {
+        padding: 0px 0 8px 0 ;
+    }
+    .section-help__icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .section-help__card{   
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .section-help__circle {
+        display: flex;
+        width: 110px;
+        height: 110px;
+        border-radius: 75px;
+        border: 2px solid #FFC41E;
+        -moz-border-radius: 75px;
+        -webkit-border-radius: 75px;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .section-help__icons-box{
+        padding-top: 32px;
+    }
+    .section-help__icons-box p {
+        font-size: 14px;
+        line-height: 20px;
+         min-width: 140px;
+    }
+    
+    .section-help__flex {
+        padding-top: 54px;
+        padding-bottom: 40px;
+    }
+    .section-help__flex-item:after {
+        top: 50px;
+    }
+    .title-w600 {
+        font-size: 20px;
+        min-height: 54px;
+    }
+    
+    .section-help__content-text {
+        padding-right: 47px; 
+        max-width: 237px;
+    }
+    .section-help__content-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .section-help__socs {
+        padding: 48px 47px 74px 0px;
+        align-items: center;
+    }
+    .section-help__socs p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+    .section-help__socs svg {
+        width: 40px;
+        height: 40px;
+    }
 }
