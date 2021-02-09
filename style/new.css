@@ -596,8 +596,49 @@ i {
 
 .finance {
     background: #fff;
+    color: #242424;
 }
-
+.title-w300 {
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 24px;
+}
+.flex-block--finance {
+    padding-top: 46px;
+    padding-bottom: 58px;
+}
+.finance__p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6B6B6B;
+    max-width: 758px;
+    text-align: center;
+    margin: 0 auto; 
+    margin-bottom: 40px;
+}
+.finance__info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 39px;
+}
+.finance__info p {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.finance__info-list {
+    margin-bottom: 24px;
+}
+.finance__info li {
+    list-style: none;
+    line-height: 27px;
+   
+}
+.finance__info-list li:nth-child(3){
+    font-weight: 700;
+}
 
 
 
@@ -810,9 +851,6 @@ i {
     }
 
 }
-
-
-
 
 
 
@@ -1042,10 +1080,6 @@ i {
     
 
     /* секция 2 */
-    .section-help__title{
-        
-
-    }
     .title-w600 {
         padding: 0px 0 8px 0 ;
     }
