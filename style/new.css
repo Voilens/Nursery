@@ -619,8 +619,20 @@ i {
 }
 .finance__info {
     display: flex;
-    justify-content: center;
-    margin-bottom: 39px;
+    justify-content: space-between;
+    padding-bottom: 56px;
+}
+.info-unp {
+    display: block;
+    flex-basis: 563px;
+    padding-left: 174px;
+    padding-bottom: 0;
+}
+.info-adress {
+    display: block;
+    flex-basis: 488px;
+    padding-right: 99px;
+    padding-bottom: 0;
 }
 .finance__info p {
     font-weight: 300;
@@ -639,6 +651,66 @@ i {
 .finance__info-list li:nth-child(3){
     font-weight: 700;
 }
+.button__button-color {
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* Секция Как оказать помощь бездомным животным */
+.flex-block--finance {
+    padding-top: 49px;
+    padding-bottom: 53px;
+}
+.food {
+    box-sizing: content-box;
+    padding-left: 292px;
+   
+}
+.food__content {
+    max-width: 660px;
+}
+.food__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 24px;  
+}
+.food__content-list {
+    min-height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.food__content li {
+    list-style: none;
+    line-height: 22px;
+}
+.content-list--color li:last-child {
+    color: #6F6C6C;
+}
+.food__content--text {
+    margin-bottom: 40px;
+    line-height: 24px;
+}
+.food__content--width {
+    max-width: 678px;
+}
+
+.content-list--height {
+    min-height: 164px;
+    margin-bottom: 16px;
+} 
+.food__content-link {
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #AD7F00;
+}   
 
 
 
@@ -846,10 +918,45 @@ i {
 
 
     /* finance */
+    .section-help__flex-item_img svg {
+        width: 89px;
+        height: 65px;
+    }
     .flex-block {
         margin-top: 0;
     }
-
+    .flex-block--finance {
+        padding-top: 45px;
+        padding-bottom: 55px;
+    }
+    .title-w300 {
+        padding-top: 0px;
+        padding-bottom: 16px;
+        min-height: auto;
+    }
+    .finance__info li {
+        font-size: 14px;
+        line-height: 20px;
+        
+    }
+    .finance__p {
+        font-size: 16px;
+        max-width: 530px;
+        line-height: normal;
+    }
+    .finance__info {
+        padding-bottom: 24px;
+    }
+    .info-unp {
+        flex-basis: 392px;
+         padding-left: 117px;
+         padding-bottom: 0;
+    }
+    .info-adress {
+        flex-basis: 343px;
+        padding-right: 69px;
+        padding-bottom: 0;
+    } 
 }
 
 
@@ -1146,4 +1253,54 @@ i {
         width: 40px;
         height: 40px;
     }
+
+
+    /* finance */ 
+    .section-help__flex-item_img svg {
+        width: 56px;
+        height: 41px;
+    }
+    .flex-block--finance {
+        padding-top: 23px;
+        padding-bottom: 31px;
+    }
+    .title-w300 {
+        font-size: 20px; 
+        min-height: 48px;
+    }
+    .finance__p { 
+        max-width: 358px;
+        line-height: 24px;
+    }
+    .finance__info p {
+         font-size: 20px;
+    }
+    .finance__info {
+        padding-bottom: 16px;
+    }
+    .info-unp {
+        flex-basis: 284px;
+         padding-left: 47px;
+         padding-bottom: 0;
+    }
+    .info-adress {
+        flex-basis: 237px;
+        padding-right: 0px;
+        padding-bottom: 0;
+    } 
+    .finance__info-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 151px;
+    }
+    .button__button-color {
+        color: #000;
+    }
+    
+
+
+   
+
+
 }
