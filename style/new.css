@@ -711,6 +711,19 @@ i {
     font-weight: 500;
     color: #AD7F00;
 }   
+/*   Автопомощь */
+.transportation {
+    box-sizing: content-box;
+    padding-left: 292px;
+   
+}
+.transportation__content {
+    max-width: 680px;
+}
+.transportation__content--text {
+    margin-bottom: 24px;
+}
+
 
 
 
@@ -957,6 +970,38 @@ i {
         padding-right: 69px;
         padding-bottom: 0;
     } 
+
+    /* Секция Как оказать помощь бездомным животным */
+    .flex-block--finance {
+    padding-top: 65px;
+    padding-bottom: 53px;
+    }
+    .food {
+        padding-left: 206px;
+    }
+    .food__content {
+        max-width: 398px;
+    }
+    .food__title {
+        font-size: 24px;
+    }
+
+    /*   Автопомощь */
+    .flex-block--transportation {
+        padding-top: 62px;
+        padding-bottom: 28px;
+    }
+    .transportation {
+        box-sizing: content-box;
+        padding-left: 292px;
+    
+    }
+    .transportation__content {
+        max-width: 481px;
+    }
+    .transportation__content--text {
+        margin-bottom: 38px;
+    }
 }
 
 
@@ -1297,10 +1342,52 @@ i {
     .button__button-color {
         color: #000;
     }
-    
-
-
    
-
-
+   /* Секция Как оказать помощь бездомным животным */
+    .flex-block--finance {
+    padding-top: 42px;
+    padding-bottom: 30px;
+    }
+    .food {
+        padding-left: 75px;
+    }
+    .food__content {
+    max-width: 398px;
+    }
+    .food__title {
+        font-size: 20px; 
+    }
+    .food__content-list {
+        min-height: 160px;
+    }
+    .food__content li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .food__content--text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .content-list--height {
+        justify-content: start;
+        margin-bottom: 16px;
+        min-height: 120px;
+        line-height: 20px;        
+    }
+    
+    
+    /*  Автопомощь */
+    .flex-block--transportation {
+        padding-top: 61px;
+        padding-bottom: 26px;
+    }
+    .transportation {
+        padding-left: 75px;
+    }
+    .transportation__content {
+        max-width: 398px;
+    }
+    .transportation__content--text {
+        font-size: 14px;
+    }
 }
