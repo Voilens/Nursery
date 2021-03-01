@@ -7,13 +7,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/fonts/stylesheet.css">
         <link rel="stylesheet" href="style/normalize.css">
-        <link rel="stylesheet" href="style/new.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="dist/style.css">
         <title>Спаси жизнь</title>
     </head> 
     <body>
-        <div class="wrapper">
+        
             <header class="header">
-                <!-- <div class="header__img-word"> -->
                     <div class="header__imd-word_word-1">
                         <svg width="599" height="192" viewBox="0 0 599 192" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.5">
@@ -49,17 +49,9 @@
                             </g>
                         </svg>
                     </div>
-                <!-- </div> -->
                     <div class="container">
                         <div class="header_img">
                             <div class="header_img__dog">
-                                <!-- <img srcset="assets/backgroud/dog-header-768.jpg 344w,
-                                            assets/backgroud/dog_header.jpg 718w"
-                                sizes="(max-width:1023px) and (min-width:768px) 344px,
-                                        (max-width:1366px) and (min-width:1270px) 718px,
-                                718px" 
-                                src="assets/backgroud/dog_header.jpg" alt="Пёсик"> -->
-                            
                                 <div class="header_img__cat"></div>
                             </div>   
                         </div> 
@@ -107,13 +99,13 @@
                             <p>Благотворительное общественное объединение защиты животных</p>
                             <p>Наша цель: помощь бездомным животным. Также мы&nbsp;поддерживаем хвостиков, которые оказались в&nbsp;пункте отлова и&nbsp;временного содержания в&nbsp;Гродно.</p>
                             <p>У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
-                            <a class="button__link" href="#section-help">Хочу помочь</a> 
+                            <a class="button__link button__button-color" href="#section-help">Хочу помочь</a> 
                         </div>
                     </div>
             </div>
             </header>
             <main role="main">
-    <!-- ---------------------секция 1---------------------- --> 
+    <!-- -----------------секция 1---------------------- --> 
                 <section class="section-heart">
                     <div class="container">
                         
@@ -136,14 +128,14 @@
                         </div>
                     </div>
                 </section>
-    <!-- --------------------секция 2---------------------- --> 
+    <!-- -----------------секция 2---------------------- --> 
                 <section class="section-help" id="section-help">
                     <h2 class="visually-hidden">Как помочь бездомным животным?</h2> 
                     <div class="container">
                         <h3 class="section-help__title">Как помочь?</h3>
                         <div class="section-help__icons">
                             <div class="section-help__icons-box">
-                                <a class="section-help__icon-link" href="#"> 
+                                <a class="section-help__icon-link" href="#section-help__content""> 
                                     <div class="section-help__circle">
                                         <svg width="84" height="82" viewBox="0 0 84 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M82 35.9773L42 3.96082" stroke="#242424" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -159,7 +151,7 @@
                                 <p>Дать хвостику дом или взять на передержку</p>
                             </div>
                             <div class="section-help__icons-box">
-                                <a class="section-help__icon-link" href="#"> 
+                                <a class="section-help__icon-link" href="#finance"> 
                                     <div class="section-help__circle">
                                         <svg width="93" height="67" viewBox="0 0 93 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5615 5.2763C36.5615 3.87694 37.1168 2.53489 38.1051 1.54539C39.0934 0.555894 40.4339 0 41.8316 0L73.4522 0C74.8499 0 76.1904 0.555894 77.1787 1.54539C78.167 2.53489 78.7223 3.87694 78.7223 5.2763V18.4671H36.5615V5.2763ZM66.8646 7.91445C66.5151 7.91445 66.18 8.05343 65.9329 8.3008C65.6859 8.54818 65.5471 8.88369 65.5471 9.23353V11.8717C65.5471 12.2215 65.6859 12.557 65.9329 12.8044C66.18 13.0518 66.5151 13.1908 66.8646 13.1908L72.1347 13.1908C72.4841 13.1908 72.8192 13.0518 73.0663 12.8044C73.3134 12.557 73.4522 12.2215 73.4522 11.8717V9.23353C73.4522 8.88369 73.3134 8.54818 73.0663 8.3008C72.8192 8.05343 72.4841 7.91445 72.1347 7.91445H66.8646Z" fill="#FFC41E"/>
@@ -174,7 +166,7 @@
                             </div>
                             
                             <div class="section-help__icons-box">
-                                <a class="section-help__icon-link" href="#"> 
+                                <a class="section-help__icon-link" href="#food"> 
                                     <div class="section-help__circle">
                                         <svg width="93" height="73" viewBox="0 0 93 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8814 13.846L0 13.846V28.757H13.8814V42.603H28.8303V28.757H42.7111V13.846L28.8303 13.846V0H13.8814V13.846ZM17.8814 4V17.846L4 17.846V24.757H17.8814V38.603H24.8303V24.757H38.7111V17.846L24.8303 17.846V4H17.8814Z" fill="#FFC41E"/>
@@ -186,7 +178,7 @@
                                 <p>Привезти корм, лекарства или другие вещи</p> 
                             </div> 
                             <div class="section-help__icons-box"> 
-                                <a class="section-help__icon-link" href="#"> 
+                                <a class="section-help__icon-link" href="#car"> 
                                     <div class="section-help__circle">
                                         <svg width="83" height="81" viewBox="0 0 83 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M31.6852 19.7643L47.6324 25.2758V47.7595C47.6324 48.1962 47.4531 48.6151 47.134 48.9239C46.8148 49.2328 46.382 49.4062 45.9307 49.4062H39.1238C38.6725 49.4062 38.2396 49.2328 37.9205 48.9239C37.6014 48.6151 37.4221 48.1962 37.4221 47.7595V36.232H20.4049V47.7595C20.4049 48.1962 20.2256 48.6151 19.9065 48.9239C19.5873 49.2328 19.1545 49.4062 18.7032 49.4062H11.8963C11.445 49.4062 11.0121 49.2328 10.693 48.9239C10.3739 48.6151 10.1946 48.1962 10.1946 47.7595V25.7431C6.24233 24.3794 3.3877 20.7585 3.3877 16.4707C3.3877 15.5972 3.74627 14.7595 4.38454 14.1418C5.02281 13.5242 5.88849 13.1772 6.79113 13.1772C7.69378 13.1772 8.55946 13.5242 9.19773 14.1418C9.836 14.7595 10.1946 15.5972 10.1946 16.4707C10.1963 17.3437 10.5554 18.1805 11.1933 18.7978C11.8312 19.4151 12.6959 19.7626 13.598 19.7643H31.6852ZM57.8427 8.23683V11.5304C57.8427 13.2774 57.1256 14.9528 55.849 16.1882C54.5725 17.4235 52.8411 18.1175 51.0358 18.1175H47.6324V21.7795L34.0186 17.0749V1.64972C34.0186 0.183058 35.8501 -0.551816 36.9233 0.485653L39.8247 3.2965H45.5287C46.689 3.2965 48.0546 4.11165 48.5726 5.11721L49.3341 6.59005H56.141C56.5923 6.59005 57.0252 6.76355 57.3443 7.07238C57.6634 7.38121 57.8427 7.80007 57.8427 8.23683ZM45.9307 8.23683C45.9307 7.91112 45.8309 7.59274 45.6439 7.32193C45.4569 7.05112 45.1911 6.84004 44.8802 6.7154C44.5692 6.59076 44.2271 6.55815 43.897 6.62169C43.5669 6.68523 43.2637 6.84207 43.0257 7.07238C42.7877 7.30269 42.6256 7.59611 42.5599 7.91556C42.4943 8.235 42.528 8.56611 42.6568 8.86702C42.7856 9.16793 43.0037 9.42512 43.2835 9.60607C43.5634 9.78702 43.8924 9.8836 44.229 9.8836C44.6803 9.8836 45.1131 9.7101 45.4323 9.40127C45.7514 9.09244 45.9307 8.67358 45.9307 8.23683Z" fill="#242424"/>
@@ -197,7 +189,7 @@
                                 <p>Доставить животным еду или отвезти в&nbsp;больницу</p> 
                             </div>      
                             <div class="section-help__icons-box">
-                                <a class="section-help__icon-link" href="#"> 
+                                <a class="section-help__icon-link" href="#volunteering"> 
                                     <div class="section-help__circle">
                                         <svg width="65" height="87" viewBox="0 0 65 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.43798 20.5057C6.5352 20.5057 5.66369 20.8691 5.01674 21.5251C4.36886 22.182 4 23.0788 4 24.0197V54.3466C4 55.4512 3.10457 56.3466 2 56.3466C0.89543 56.3466 0 55.4512 0 54.3466V24.0197C0 22.0357 0.776995 20.1276 2.16876 18.7163C3.56144 17.3042 5.45628 16.5057 7.43798 16.5057C9.41969 16.5057 11.3145 17.3042 12.7072 18.7163C14.099 20.1276 14.876 22.0357 14.876 24.0197V43.3186C14.876 44.4232 13.9805 45.3186 12.876 45.3186C11.7714 45.3186 10.876 44.4232 10.876 43.3186V24.0197C10.876 23.0788 10.5071 22.182 9.85923 21.5251C9.21227 20.8691 8.34077 20.5057 7.43798 20.5057Z" fill="black"/>
@@ -229,7 +221,7 @@
                         <div class="section-help__flex-item"></div>
                     </div>
                     <div class="container">
-                    <div class="section-help__content">
+                    <div class="section-help__content" id="section-help__content">
                         <div class="section-help__content-text"> 
                             <h3 class="section-help__title title-w600">Дом и&nbsp;любовь для хвостика</h3>
                             <p>Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших хвостиках, возможно кому&#8209;то нужен будет именно такой друг.</p>
@@ -344,7 +336,7 @@
                         </div>
                     </div>
                 </section>
-    <!-- --------------------Секция финансовая поддержка---------------------- -->
+    <!-- -----------------Секция финансовая поддержка---------------------- -->
                 <section class="finance">
                     <h2 class="visually-hidden">Ваша финансовая помощь бездомным животным</h2>
                     <div class="section-help__flex flex-block--finance">
@@ -364,7 +356,7 @@
                         <div class="section-help__flex-item"></div>
                     </div>
                     <div class="container">
-                        <h3 class="section-help__title title-w300">Финансовая поддержка</h3>
+                        <h3 class="section-help__title title-w300" id="finance">Финансовая поддержка</h3>
                         <p class="finance__p"> Такая помощь необходима для оплаты стерилизации, прививок, лечения больных животных, покупка корма и других жизненно необходимых вещей.</p>
                         <div class="finance__info">
                             <div class="finance__info info-unp">
@@ -377,7 +369,7 @@
                                     <li>ЗАО 'Альфа-Банк'</li>
                                     <li>БИК: ALFABY2X</li>
                                 </ul>
-                                <button class="button__button-color">Быстрый платеж</button>
+                                <button class="button__button-color button-color--margin">Быстрый платеж</button>
                             </div>
                             <div class="finance__info info-adress">
                                 <p>Коробочки в городе</p>
@@ -433,7 +425,6 @@
                             </div>
                             <div class="food__content food__content--width">
                                 <h3 class="food__title">Другие нужные вещи</h3>
-                               
                                 <ul class="food__content-list content-list--height">
                                     <li>Для содержания животных всегда необходимы:</li>
                                     <li>&bull;  Ошейники, поводки, намордники;</li>
@@ -446,7 +437,7 @@
                         </article>
                    </div>
     <!-- -------------------Автопомощь-------------- -->
-                   <div class="section-help__flex flex-block--transportation">
+                   <div class="section-help__flex flex-block--transportation" id="car">
                         <div class="section-help__flex-item"></div>
                         <div class="section-help__flex-item_img">
                             <svg width="118" height="115" viewBox="0 0 118 115" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -459,7 +450,7 @@
                     <div class="container">
                         <article class="transportation">
                             <div class="transportation__content">
-                                <h3 id="car" class="food__title">Автопомощь</h3>
+                                <h3 class="food__title">Автопомощь</h3>
                                 <p class="transportation__content--text">Важной помощью будет транспортировка. Необходимо отвозить животных в ветеринарную клинику в сопровождении нашего волонтера или привозить еду. Если у вас есть автомобиль, немного свободного времени и доброе сердце - будем вам рады.</p> 
                                 <button class="button__button-color">Оставить заявку</button>
                             </div>
@@ -481,94 +472,142 @@
                         <div class="section-help__flex-item"></div>
                     </div>
                     <div class="container">
-                        <article class="volunteering">
-                            <h3 id="volunteering" class="food__title">Волонтерство</h3>
-                            <p>Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы располагаете несколькими часами свободного времени, проведите его с пользой! Главное условие - это Ваше совершеннолетие и любовь к животным!</p>
-                            <p>Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.</p> 
-                            <button class="button__button-color">Оставить заявку</button>
-                        </article>   
+                        <article class="section-heart section-heart--background" id="volunteering">
+                            <div class="container">
+                                
+                                <div class="shape shape-border">
+                                    <div class="shape_wrapper shape_wrapper--calc">
+                                        <img class="section-heart__img-dog" src="assets/imgs/volunteering-img.png" alt=""> 
+                                    </div>  
+                                </div> 
+                                             
+                                <div class="container">
+                                <h2 class="visually-hidden" >Волонтерство</h2> 
+                                    <div class="section-heart__content section-heart__content--padding">
+                                        <h3 class="section-heart__content-title content-title--color" >Волонтерство</h3>
+                                        <div class="section-heart__content--column">
+                                            <p>Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы располагаете несколькими часами свободного времени, проведите его с пользой! Главное условие - это Ваше совершеннолетие и любовь к животным!</p>
+                                            <p>Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.</p> 
+                                        </div>
+                                        <button class="button__button-color button__button-color--block">Оставить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>  
                     </div> 
                 </section>
-        </div>
+    <!-- -----------------Секция Новости---------------- -->
+                <section class="news">
+                    <div class="container">
+                        <h2 class="visually-hidden">Новости</h2>
+                        <div class="wrapper">
+                            <h3 class="food__title title-news">Новости</h3>
+                            <article class="news__news">
+                                
+                                <img src="assets/imgs/news_img-1.png" alt="photo">
+                                <div class="news__content">
+                                    <p>Срочно необходимо забрать собаку (мальчик) на передержку или насовсем. Послезавтра его ждет усыпление. С кормом и доставкой поможем. В данный момент находится в вольера САХа.</p>
+                                    <p>Контактный телефон + 37529 58930557</p>
+                                    <p>Спасите жизнь хвостику.</p>
+                                </div>
+                                
+                            </article>
+                            <article class="news__news">
+                                <img src="assets/imgs/news_img-2.png" alt="photo">
+                                <div class="news__content">
+                                    <p>Найдены бедомные щенки по улице Горького д.56.</p>
+                                    <p>Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или пристроить малышей - будем вам очень благодарны.</p>    
+                                </div> 
+                            </article>
+                            <a class="food__content-link content-link--padding" href="#">Показать все новости</a>
+                        </div>
+                    </div>
+                </section>
+    <!-- -----------------Секция О нас-------------------- -->
+                <section class="contact">
+                    <div class="container">
+                        <div class="contact__content">
+                            <h3 id="info" class="food__title title-news title-contact">О нас</h3>
+                            <p class="contact__content-text">Мы - благотворительное общественное объединение защиты животных «СПАСИ ЖИЗНЬ». Цель нашей деятельности: помощь бездомным животным, оказавшимся в Пункте отлова и временного содержания безнадзорных животных г.Гродно.</p>
+                            <h4 id="contacts" class="title-contact--h4">Контакты</h4>
+                            
+                            <div class="contact__content-text content-text--tel">
+                                <p>Если Вы хотите приютить одного из этих четвероногих или оказать какую-либо помощь, звоните волонтёрам:</p>
+                                <p>+375 (33) 6237879, Лена</p>
+                                <p>+375 (29) 7877791, Ольга</p>
+                                <p>+375 (29) 5837015, Рита</p>
+                            </div>
+                            <p class="contact__content-text content-text--soc">Связаться с нами можно написав в соц. сетях.</p> 
+                            <a class="socs-img__link-vk" href="https://vk.com/animalsgrodno"
+                                aria-label="Наш vk">
+                                <svg width="49" height="49" viewBox="0 0 49 49" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.5" cy="24.5" r="23.5" stroke="#FFC41E" stroke-width="2"/>
+                                    <path d="M38.3122 19.219C38.5218 18.5157 38.3122 18 37.3211 18H34.0379C33.2025 18 32.8207 18.4461 32.6111 18.9361C32.6111 18.9361 30.9418 23.0482 28.5764 25.7145C27.8128 26.4903 27.464 26.7353 27.0478 26.7353C26.8397 26.7353 26.5373 26.4903 26.5373 25.7871V19.219C26.5373 18.3751 26.2963 18 25.6001 18H20.441C19.92 18 19.6056 18.3902 19.6056 18.7622C19.6056 19.5607 20.7883 19.7453 20.9096 21.9956V26.8775C20.9096 27.9467 20.7195 28.1418 20.3003 28.1418C19.1879 28.1418 16.4811 24.0146 14.8747 19.29C14.5618 18.372 14.2459 18.0015 13.4075 18.0015H10.1258C9.18714 18.0015 9 18.4477 9 18.9377C9 19.8178 10.1124 24.1734 14.1815 29.934C16.8943 33.8676 20.7135 36 24.1928 36C26.2783 36 26.5358 35.5266 26.5358 34.71V31.7367C26.5358 30.79 26.7349 30.5994 27.3951 30.5994C27.8802 30.5994 28.7156 30.8474 30.6634 32.7424C32.8881 34.9897 33.2564 35.9985 34.5065 35.9985H37.7882C38.7254 35.9985 39.194 35.5251 38.9245 34.5905C38.6295 33.6604 37.5666 32.3068 36.1563 30.7053C35.3898 29.7918 34.2445 28.8088 33.8956 28.3173C33.4091 27.6836 33.5498 27.4038 33.8956 26.8412C33.8971 26.8427 37.896 21.1533 38.3122 19.219Z" fill="#E8A700"/>
+                                </svg>     
+                            </a>
+                            <a class="nav-img__link-inst" href="https://www.instagram.com/animalsgrodno/"
+                                aria-label="Наш instagramm">
+                                <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.5" cy="24.5" r="23.5" stroke="#FFC41E" stroke-width="2"/>
+                                    <path d="M24.4964 19.9981C22.0175 19.9981 19.9945 22.0211 19.9945 24.5C19.9945 26.9789 22.0175 29.0019 24.4964 29.0019C26.9752 29.0019 28.9982 26.9789 28.9982 24.5C28.9982 22.0211 26.9752 19.9981 24.4964 19.9981ZM37.9985 24.5C37.9985 22.6357 38.0154 20.7884 37.9107 18.9275C37.806 16.766 37.3129 14.8477 35.7324 13.2672C34.1485 11.6832 32.2336 11.1935 30.0722 11.0888C28.2079 10.9841 26.3606 11.001 24.4997 11.001C22.6355 11.001 20.7882 10.9841 18.9273 11.0888C16.7659 11.1935 14.8477 11.6866 13.2671 13.2672C11.6832 14.8511 11.1935 16.766 11.0888 18.9275C10.9841 20.7917 11.001 22.6391 11.001 24.5C11.001 26.3609 10.9841 28.2116 11.0888 30.0725C11.1935 32.234 11.6866 34.1523 13.2671 35.7328C14.851 37.3168 16.7659 37.8065 18.9273 37.9112C20.7916 38.0159 22.6389 37.999 24.4997 37.999C26.364 37.999 28.2113 38.0159 30.0722 37.9112C32.2336 37.8065 34.1518 37.3134 35.7324 35.7328C37.3163 34.1489 37.806 32.234 37.9107 30.0725C38.0188 28.2116 37.9985 26.3643 37.9985 24.5ZM24.4964 31.4268C20.6632 31.4268 17.5697 28.3332 17.5697 24.5C17.5697 20.6668 20.6632 17.5732 24.4964 17.5732C28.3295 17.5732 31.423 20.6668 31.423 24.5C31.423 28.3332 28.3295 31.4268 24.4964 31.4268ZM31.7067 18.9072C30.8118 18.9072 30.089 18.1845 30.089 17.2895C30.089 16.3945 30.8118 15.6718 31.7067 15.6718C32.6017 15.6718 33.3244 16.3945 33.3244 17.2895C33.3247 17.502 33.283 17.7125 33.2018 17.9089C33.1206 18.1053 33.0015 18.2837 32.8512 18.434C32.7009 18.5843 32.5225 18.7034 32.3261 18.7846C32.1297 18.8658 31.9192 18.9075 31.7067 18.9072Z" fill="#E8A700"/>
+                                </svg>     
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="contact__content--background">
+                        <div class="container">     
+                            <div class="snape-circle--text">
+                                <span>Спасибо<br> за помощь
+                                    <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M36.8429 35.197C38.1189 31.4474 36.1124 27.372 32.3621 26.0958C28.6119 24.8196 24.5373 26.8257 23.2614 30.5753C21.9845 34.3275 23.9894 38.4009 27.7404 39.6773C31.4913 40.9538 35.566 38.9493 36.8429 35.197Z" fill="white"/>
+                                        <path d="M65.7829 38.9488C62.0333 37.6729 57.9581 39.6787 56.6822 43.4283C55.4053 47.1805 57.412 51.2531 61.1616 52.529C64.9119 53.8052 68.9862 51.8021 70.263 48.0498C71.539 44.3002 69.5338 40.2252 65.7829 38.9488Z" fill="white"/>
+                                        <path d="M54.7326 51.1988C54.4586 50.4563 54.0195 49.5553 53.4926 48.5878C52.348 45.2375 49.7297 42.4309 46.1194 41.2023C42.9061 40.1089 39.5546 40.4865 36.7753 41.9598C35.2722 42.5742 33.9059 43.2083 32.9741 43.7952L32.3523 44.182C29.4533 45.983 25.8452 48.2232 24.0692 53.5038C22.4206 58.4078 25.0523 63.7524 29.9362 65.4144C31.2905 65.8785 32.7337 66.0235 34.1533 65.838C35.5729 65.6525 36.9304 65.1416 38.12 64.345C38.5768 65.7022 39.3411 66.9355 40.3533 67.9486C41.3655 68.9616 42.5981 69.727 43.9549 70.1849C48.8368 71.8462 54.1813 69.2166 55.867 64.3244C57.6806 59.0566 56.1872 55.0804 54.9891 51.8852L54.7326 51.1988Z" fill="white"/>
+                                        <path d="M48.0641 37.0311C52.1965 38.4374 56.6865 36.2274 58.0927 32.0949C59.499 27.9625 57.289 23.4725 53.1565 22.0663C49.0241 20.66 44.5341 22.87 43.1279 27.0025C41.7216 31.1349 43.9316 35.6249 48.0641 37.0311Z" fill="white"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="shapes">
+                                <div class="shape_wrapper shape_wrapper--calc shape_wrapper--background">
+                                   <div class="snape-circle">
+                                         
+                                   </div>  
+                                </div>  
+                            </div> 
+                        </div>
+                    </div>  
+                </section>
+    <!-- -----------------Футер------------------------- -->
+                <footer>
+                    <div class="container">
+                        <div class="footer">
+                            <ul class="footer-list">
+                                <li><a href="#section-help__content">Дом или передержка</li></a></li>
+                                <li><a href="#finance">Финансовая поддержка</a></li>
+                                <li><a href="#food">Корма, лекарства и другие вещи</a></li>
+                                <li><a href="#car">Автопомощь</a></li>
+                                <li><a href="#volunteering">Волонтерство</a></li>
+                            </ul>
+                            <ul class="footer-contact">
+                                <li><a href="#info">О нас</a></li>
+                                <li><a href="#info">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <span class="footer-boozj">© 2020 БООЗЖ "СПАСИ ЖИЗНЬ"</span>
+                    </div>
+                </footer>
+                
+            </main>    
+           
 
-<!--  
-     
-<section>
-    <div class="container">
-        <h3 style="font-weight: 600; padding-top: 54px; padding-bottom: 23px;">Новости</h3>
-        <article class="news">
-            <img src="assets/imgs/Ellipse.svg" alt="photo">
-            <div>
-                <p>Срочно необходимо забрать собаку (мальчик) на передержку или насовсем. Послезавтра его ждет усыпление. С кормом и доставкой поможем. В данный момент находится в вольера САХа.</p>
-                <p>Контактный телефон + 37529 58930557</p>
-                <p>Спасите жизнь хвостику.</p>
-            </div>
-        </article>
-        <article class="news">
-            <img src="assets/imgs/Ellipse.svg" alt="photo">
-            <div>
-                <p>Найдены бедомные щенки по улице Горького д.56.</p>
-                <p>Сегодня будут перевезены в вольеры САХа. Если у вас есть возможность взять на передержку или пристроить малышей - будем вам очень благодарны.</p>    
-            </div> 
-        </article>
-            <a href="#" class="list list_news" style="text-align: left">Показать все новости</a> 
-    </div>
-</section>
-<section class="help_section">
-    <div class="container">
-        <div class="kontakt_section" style="padding-top: 56px">
-            <h3 id="info" style="font-weight: 600; padding-bottom: 24px">О нас</h3>
-            <p style="font-weight: 500">Мы - благотворительное общественное объединение защиты животных «СПАСИ ЖИЗНЬ». Цель нашей деятельности: помощь бездомным животным, оказавшимся в Пункте отлова и временного содержания безнадзорных животных г.Гродно.</p>
-            <p id="kontakts" style="padding: 24px 0; font-size: 22px">Контакты</p>
-            <p >Если Вы хотите приютить одного из этих четвероногих или оказать какую-либо помощь, звоните волонтёрам:</p>
-            <div class="kontakt_section_padding">
-                <p>+375 (33) 6237879, Лена</p>
-                <p>+375 (29) 7877791, Ольга</p>
-                <p>+375 (29) 5837015, Рита</p>
-            </div>
-            <p style="padding-top: 40px; padding-bottom: 20px; font-size: 22px;">Адрес САХа</p>
-            <p style="padding-bottom: 40px; font-size: 16px">РБ, г. Гродно, ул.Дзержинского, д.104</p>
-            <p style="color: #6B6B6B; font-size: 16px; padding-bottom: 28px">Связаться с нами можно написав в соц. сетях.</p> 
-            <div style="display: flex; padding-bottom: 51px">
-                <div class="nav-img" style="margin-left: 0"><a href="#"><img src="assets/imgs/vk_nav.svg" alt="vk navbar icon"></a></div>
-                <div class="nav-img"><a href="#"><img src="assets/imgs/inst_nav.svg" alt="instagram navbar icon"></a></div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="final_secton">
-    <div class="container">
-        <p>Спасибо за помощь</p>
-    </div>
-</section>
-</main>
-<footer style="background: #F6F6F6">
-<div class="container">
-    <div class="footer">
-        <ul class="footer_list">
-            <li><a href="#house">Дом или передержка</li></a></li>
-            <li><a href="#finance">Финансовая поддержка</a></li>
-            <li><a href="#food">Корма, лекарства и другие вещи</a></li>
-            <li><a href="#car">Автопомощь</a></li>
-            <li><a href="#volunteering">Волонтерство</a></li>
-        </ul>
-        <ul>
-            <li><a href="#info" style="font-weight: 400; padding: 0; font-size: 14px; height: auto; line-height: 17px">О нас</a></li>
-            <li><a href="#kontakts" style="font-weight: 400; padding: 0; font-size: 14px; height: auto; line-height: 17px">Контакты</a></li>
-        </ul>
-    </div>
-    <p style="font-size: 12px; color: #B3B3B3; text-align: center; line-height: 16px; padding-bottom: 16px">© 2020 БООЗЖ "СПАСИ ЖИЗНЬ"</p>
-</div>
-</footer>
- -->
+                <!-- <img srcset="assets/backgroud/dog-header-768.jpg 344w,
+                                            assets/backgroud/dog_header.jpg 718w"
+                                sizes="(max-width:1023px) and (min-width:768px) 344px,
+                                        (max-width:1366px) and (min-width:1270px) 718px,
+                                718px" 
+                                src="assets/backgroud/dog_header.jpg" alt="Пёсик"> -->
 
-
-
-
-
-        
-       
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <script src="js/script.js"></script>
+        <script type="text/javascript" src="dist/bundle.js"></script>
     </body>
-    
+</html>   
