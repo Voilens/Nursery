@@ -6,8 +6,6 @@ const webpack = require("webpack");
 
 // подключение плагинов
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // настройка самого модуля
 module.exports = {
@@ -17,7 +15,7 @@ module.exports = {
   // настройка точек входа js
   entry: {
     // основной файл приложения
-    app: "./scss/index.scss", // путь к тому файлу, который будет обрабатываться (путь к файлу app.js) - от src
+    app: ["./js/app.js", "./scss/index.scss"], // путь к тому файлу, который будет обрабатываться (путь к файлу app.js) - от src
   },
 
   // путь для собранных файлов
@@ -28,32 +26,25 @@ module.exports = {
     //  publicPath: '../'// специально значение, которое устраняет конфликты при переадресации scss и вообще указании файлов
   },
   mode: "development",
-  plugins: [new MiniCssExtractPlugin(), 
-    new CopyPlugin({
-      patterns: [
-        { from: "assets", to: "assets" },
-      ],
+  // конфигурация dev-сервера
+  devServer: {
+    static: ["app"],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // all options are optional
+      filename: "css/[name].css",
+      chunkFilename: "[id].css",
+      ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
-    new HtmlWebpackPlugin({
-      template: '../app/index.html'
-  })
   ],
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader', {
-          loader: MiniCssExtractPlugin.loader,
-          options: {
-            esModule: false,
-          },
-        }, {
-            loader: 'css-loader',
-            options: { 
-              url: false 
-            }
-          }, 'sass-loader'],
-    },
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
         use: [
@@ -80,7 +71,9 @@ module.exports = {
       },
     ],
   },
-  devServer: {
-    static: ["app"],
-  },
+  resolve: {
+    alias: {
+      'css-loader': path.resolve(__dirname, 'css-loader-config.js')
+    }
+  }
 };

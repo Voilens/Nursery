@@ -26,7 +26,10 @@ html,body{
     margin: 0px auto;
     position: relative;
 }
-
+.container-cat {
+overflow: hidden;
+padding-bottom: 74px;
+}
 .header{
     /* position: fixed; */
     width: 100%;
@@ -114,39 +117,49 @@ nav {
     border-radius: 50%;
 }
 
-
+// .header_img {
+//     height: 100%;
+//     width: 110%;
+//     position: relative;
+    // overflow: visible;
+// }
 .header_img__dog {
-    background-image: url("../assets/backgroud/dog_header.jpg");
+    display: block;
+    background-image: url("./assets/backgroud/dog_header.jpg");
+    background-repeat: no-repeat;
     position: absolute; 
-    right: 0; 
+    right: 110px; 
     width: 100%;
-    max-width: 718px;
+    width: 718px;
     height: 713px;
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 0 0 8px 8px;
     z-index: 0;
     animation: dog 2s ease normal;
+    // background-size: contain;
 }
-.header_img__dog img {
-    width: 100%;
-}
+// .header_img__dog img {
+//     width: 100%;
+// }
 @keyframes dog {
     0% {
         right: -100%;
     }
     100% {
-        right: 0%;
+        right: 8.05%;
     }
 }
 
 .header_img__cat{
-    background-image: url("../assets/backgroud/cat_header.png");
+    background-image: url("./assets/backgroud/cat_header.png");
     width: 100%;
     max-width: 483px;
     height: 469px;
     position: absolute;
-    top: 65.9%;
-    left: 9.62%;
+    top: 48%;
+    left: 43%;
     animation: cat 2s ease normal;
+    background-size: cover;
+    z-index: 2;
 }
 
 @keyframes cat {
@@ -154,7 +167,7 @@ nav {
         top: 100%;
     }
     100% {
-        top: 65.9%;
+        top: 48%;
     }
 }
 
@@ -205,43 +218,53 @@ nav {
 
 
 .content{
-    padding: 3.22962% 0 23.735% 0;
+    position: absolute;
+    animation: content 3s forwards;
+    top: 140px;
+    // padding: 3.22962% 0 23.735% 0;
+}
+@keyframes content {
+
+    0% {
+        left: -100%; 
+    }
+    100% {
+        left: 8.05%;
+    }
 }
 h1 {
     text-transform: uppercase;
     font-weight: bold;   
-    font-size: 4.5rem; 
+    // font-size: 72px; 
     color: #242424;
-    line-height: 5.563rem;
-    max-height: 79px;
+    line-height: normal;
+    // max-height: 79px;
     padding-bottom: 2px;
     position: relative;
-    margin: 0;
+    // margin: 0;
 }
 
 .content__text{
-    overflow: hidden;
+    // overflow: hidden;
     font-size: 1.125rem;
     line-height: 1.563rem;
     padding: 0;
     display: block;
     margin: 0;
     z-index: 3;
-    position: relative;
-    animation: content__text 3s forwards;
-    
-    
+    // position: relative;
+    // animation: content__text 3s forwards;   
 }
 
-@keyframes content__text {
+// @keyframes content__text {
 
-    0%, 20% {
-        left: -100%; 
-    }
-    100% {
-        left: 0%;
-    }
-}
+//     0%, 20% {
+//         left: -100%; 
+//     }
+//     100% {
+//         left: 8.05%;
+//     }
+// }
 .content__text p{
     margin: 0;
     position: relative;
@@ -1034,8 +1057,8 @@ p.content-text--soc {
 }
 /* Бэграунд с фигурами и надписью на финальной секции */
 .contact__content--background {
-    background-image: url("../assets/backgroud/final-img.jpg");
-    max-width: 1366px;
+    background-image: url("./assets/backgroud/final-img.jpg");
+    width: 1920px;
     height: 741px;
     background-size: cover;
 }
@@ -1124,7 +1147,7 @@ div.snape-circle--text span{
 @media (max-width:1269px){
     
     .header_img__dog{
-        background-image: url("../assets/backgroud/dog-header-1024.jpg");
+        background-image: url("./assets/backgroud/dog-header-1024.jpg");
         max-width: 504px;
         height: 564px;
         
@@ -1445,7 +1468,7 @@ div.snape-circle--text span{
         height: 40px;
     }
     .header_img__dog{
-        background-image: url("../assets/backgroud/dog-header-768.jpg");
+        background-image: url("./assets/backgroud/dog-header-768.jpg");
         max-width: 344px;
         height: 385px;
         right: 0;

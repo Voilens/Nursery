@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-        <link rel="stylesheet" href="style/normalize.css">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="dist/style.css">
+        <!-- <link href="./dist/app.css" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+        <link rel="stylesheet" href="src/scss/normalize.css">
+        <link rel="stylesheet" href="./assets/css/base.css"> -->
         <title>Спаси жизнь</title>
     </head> 
     <body>
@@ -49,11 +49,22 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="container">
+                    <div class="header_img__dog">
+
+                    </div>
+                    <div class="content">                
+                        <div class="content__text">                             
+                            <h1>Спаси жизнь</h1>
+                            <p>Благотворительное общественное объединение защиты животных</p>
+                            <p>Наша цель: помощь бездомным животным. Также мы&nbsp;поддерживаем хвостиков, которые оказались в&nbsp;пункте отлова и&nbsp;временного содержания в&nbsp;Гродно.</p>
+                            <p>У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
+                            <a class="button__link button__button-color" href="#section-help">Хочу помочь</a> 
+                        </div>
+                    </div> 
+
+                    <div class="container container-cat">                        
                         <div class="header_img">
-                            <div class="header_img__dog">
-                                <div class="header_img__cat"></div>
-                            </div>   
+                            <div class="header_img__cat"></div> 
                         </div> 
                         <div class="header__body">
                             <div class="header__burger">
@@ -91,17 +102,7 @@
                             </div>
                         </div>
                     
-                        <div class="content">
-                
-                        <div class="content__text"> 
-                            
-                            <h1>Спаси жизнь</h1>
-                            <p>Благотворительное общественное объединение защиты животных</p>
-                            <p>Наша цель: помощь бездомным животным. Также мы&nbsp;поддерживаем хвостиков, которые оказались в&nbsp;пункте отлова и&nbsp;временного содержания в&nbsp;Гродно.</p>
-                            <p>У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
-                            <a class="button__link button__button-color" href="#section-help">Хочу помочь</a> 
-                        </div>
-                    </div>
+                    
             </div>
             </header>
             <main role="main">
@@ -112,7 +113,7 @@
                         <div class="shape">
                             <div class="shape_wrapper">
 
-                                <img class="section-heart__img-dog" src="assets/imgs/dog_1.png" alt="">
+                                <img class="section-heart__img-dog" src="/assets/imgs/dog_1.png" alt="">
                                 
                             </div>  
                             
@@ -135,7 +136,7 @@
                         <h3 class="section-help__title">Как помочь?</h3>
                         <div class="section-help__icons">
                             <div class="section-help__icons-box">
-                                <a class="section-help__icon-link" href="#section-help__content""> 
+                                <a class="section-help__icon-link" href="#section-help__content"> 
                                     <div class="section-help__circle">
                                         <svg width="84" height="82" viewBox="0 0 84 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M82 35.9773L42 3.96082" stroke="#242424" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -477,7 +478,7 @@
                                 
                                 <div class="shape shape-border">
                                     <div class="shape_wrapper shape_wrapper--calc">
-                                        <img class="section-heart__img-dog" src="assets/imgs/volunteering-img.png" alt=""> 
+                                        <img class="section-heart__img-dog" src="./assets/imgs/volunteering-img.png" alt=""> 
                                     </div>  
                                 </div> 
                                              
@@ -607,7 +608,7 @@
                                 src="assets/backgroud/dog_header.jpg" alt="Пёсик"> -->
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-        <script src="js/script.js"></script>
-        <script type="text/javascript" src="dist/bundle.js"></script>
+        <!-- <script src="js/script.js"></script>
+        <script type="text/javascript" src="dist/bundle.js"></script> -->
     </body>
 </html>   
