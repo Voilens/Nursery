@@ -25,15 +25,22 @@ html,body{
     max-width: 1146px;
     margin: 0px auto;
     position: relative;
+    z-index: 2;
 }
-.container-cat {
-overflow: hidden;
-padding-bottom: 74px;
+.container.container-cat {
+    height: calc(100% + 100px);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    pointer-events: none;
+    // padding-bottom: 74px;
 }
 .header{
     /* position: fixed; */
     width: 100%;
-    height: 100%;
+    // height: 100%;
     max-height: 839px;
     top: 0;
     left: 0;
@@ -51,11 +58,13 @@ padding-bottom: 74px;
 }
 
 .header__body{
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
     height: 127px;
     align-items: center; 
+    z-index: 1;
 }
 .header__burger{
     display: none;
@@ -123,29 +132,42 @@ nav {
 //     position: relative;
     // overflow: visible;
 // }
+.container.container-dog {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
 .header_img__dog {
+    position: absolute;
+    right: 0;
     display: block;
     background-image: url("./assets/backgroud/dog_header.jpg");
     background-repeat: no-repeat;
-    position: absolute; 
-    right: 110px; 
+    // position: absolute; 
+    // right: 7%; 
+    // top: 0;
+    // left: 50%;
     width: 100%;
     width: 718px;
     height: 713px;
     border-radius: 0 0 8px 8px;
-    z-index: 0;
-    animation: dog 2s ease normal;
+    // z-index: 0;
+    // transform: translateX(-50%);
+    // animation: dog 2s ease normal;
     // background-size: contain;
+    animation: dog 2s ease normal;
 }
 // .header_img__dog img {
 //     width: 100%;
 // }
 @keyframes dog {
     0% {
-        right: -100%;
+        transform: translateX(100%);
     }
     100% {
-        right: 8.05%;
+        transform: translateX(0%);
     }
 }
 
@@ -171,56 +193,91 @@ nav {
     }
 }
 
-.header__imd-word_word-1{
+.outer-container {
+    max-width: 1366px;
+    position: relative;
+    margin: 0 auto;
+}
+.container-text-bg {
     position: absolute;
-    top: 51.5%;
+    bottom: -223px;
+    max-width: 1256px;
+    height: 100%;
+}
+
+.header__imd-word_word-1{
+    position: relative;
+    opacity: 0.5;
+    bottom: 0;
     z-index: 1;
     animation: word-1 2s ease normal;
+    line-height: 0;
+    // transform: translateY(100%);
 }
+
+// @keyframes word-1 {
+//     0% {
+//         transform: translateY(100%)
+//     }
+//     100% {
+//         transform: translateY(0%)
+//     }
+// }
 @keyframes word-1 {
     0% {
-        top: 110%;
+        top: 100%;
     }
     100% {
-        top: 51.5%;
+        top: 0%;
     }
 }
 .header__imd-word_word-2{
-    position: absolute;
+    position: relative;
     left: -2px;
-    top: 78%;
+    opacity: 0.5;
+    bottom: 0;
     z-index: 1;
     animation: word-2 2s ease normal;
+    line-height: 0;
 }
+// @keyframes word-2 {
+//     0% {
+//         transform: translateY(100%)
+//     }
+//     100% {
+//         transform: translateY(0%)
+//     }
+// }
 @keyframes word-2 {
     0% {
-        top: 110%;
+        top: 100%;
     }
     100% {
-        top: 78%;
+        top: 0%;
     }
 }
 .header__imd-word_word-3{
-    position: absolute;
+    position: relative;
+    opacity: 0.5;
     left: 18.5em;
-    top: 41.9375em;
+    top: 0;
     z-index: 1;
     animation: word-3 2s ease normal;
 }
 @keyframes word-3 {
     0% {
-        top: 110%;
+        top: 100%;
     }
     100% {
-        top: 41.9375em;
+        top: 0;
     }
 }
 
 
 .content{
-    position: absolute;
-    animation: content 3s forwards;
-    top: 140px;
+    // position: absolute;
+    // animation: content 3s forwards;
+    // top: 140px;
     // padding: 3.22962% 0 23.735% 0;
 }
 @keyframes content {
@@ -252,17 +309,28 @@ h1 {
     display: block;
     margin: 0;
     z-index: 3;
+    // transform: translateX(0%)
     // position: relative;
-    // animation: content__text 3s forwards;   
+    animation: content__text 3s forwards;   
+    padding-bottom: 272px;
 }
 
+@keyframes content__text {
+
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
 // @keyframes content__text {
 
 //     0%, 20% {
 //         left: -100%; 
 //     }
 //     100% {
-//         left: 8.05%;
+//         left: 0%;
 //     }
 // }
 .content__text p{
@@ -1154,6 +1222,7 @@ div.snape-circle--text span{
     }
     .header_img__cat{
         width: 71.22153%;
+        // height: 469px;
         left: 11.5%;
         height: 326px;
         background-size: contain;
@@ -1205,6 +1274,7 @@ div.snape-circle--text span{
     }
     .header__body{
         height: 121px; 
+        // z-index: 1;
     }
     .content{
         padding-top: 0;
